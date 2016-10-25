@@ -8,7 +8,7 @@ Allows PHP to connect to your database
 $server = 'localhost';
 $user = 'root';
 $pass = 'password';
-$db = 'records';
+$db = 'library';
 
 // Connect to Database
 $connection = mysql_connect($server, $user, $pass)
