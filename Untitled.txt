@@ -5,3 +5,15 @@ Megan - Front-end Design for Main Menu, Admin Login (Help with front end for Lib
 Justin - Animating cards/Database for library 
 
 Zach - Back end For library, and for Create a card. Attempt for the image manipulation (Talking to White 10/28)
+
+
+General Ideas
+
+	Main Menu - Pictures with blur effect moving from right to left in the background (Justin)
+
+	Library - Slider Bar (Or +/- image size adjust) And possibly the Cover Flow View from low - fidelity Prototype With animations by Justin
+	
+	Create a Card - Honestly have no idea how to do photo until talking to White tomorrow. 
+			(An idea is we could have the user outline themselves with their mouse to delete the excess photo)
+
+	Admin Login - hard code a user login and admin login. Possible admin features such as delete a card? 
