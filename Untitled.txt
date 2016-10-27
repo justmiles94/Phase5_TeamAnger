@@ -1,0 +1,7 @@
+Division of Work
+
+Megan - Front-end Design for Main Menu, Admin Login (Help with front end for Library and make a card (Hard code User/Admin Login)
+
+Justin - Animating cards/Database for library 
+
+Zach - Back end For library, and for Create a card. Attempt for the image manipulation (Talking to White 10/28)
