@@ -9,11 +9,19 @@
     text-align: center;
 }
 
-body {
-	background-color: black;
+.startMenuBtn {
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+    background-image: star-trek-login-background.jpg;
+	background-size: cover;
 }
 
 #loginForm {
+	margin: 0;
+	padding: 0;
 	font-size: 64px;
 	text-align: center;
 	color: yellow;
@@ -29,12 +37,8 @@ body {
 
 #loginForm input[type='submit'] {
 	font-size: 32px;
-	background-color: red;
+	background-color: lightgreen;
 	border-radius: 25px;
-}
-
-button {
-	border-radius: 35px;
 }
 
 .appName {
@@ -58,11 +62,21 @@ button {
 }
 
 .adminLogin {
-	position: absolute;
-	right: 0;
+	text-align: center;
+	font-size: 14px;
+	background-color: red;
+}
+
+img {
+}
+
+.cardBox img {
+	margin: 15px;
+	height: 200px;
 }
 
 .mainBtnContainer button{
+	border-radius: 35px;
 	font-size: 48px;
 	font-weight: bold;
 	max-width: 250px;

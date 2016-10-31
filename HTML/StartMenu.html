@@ -3,19 +3,28 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
     <meta charset="UTF-8">
-    <title>StartTrekComicConStartMenu</title>
+    <title>Menu</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"
+	  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	  crossorigin="anonymous"></script>
+	<script src="../JS/javascript.js"></script>
 </head>
-<body>
+<body style='background-color:black'>
+	<img style='height:50%;position:absolute; bottom:0' src='../Cards/A001.jpg'>
+	<img style='height:50%;position:absolute;right:0; bottom:0' src='../Cards/A002.jpg'>
+	<img style='height:50%;position:absolute; top:0;' src='../Cards/A003.jpg'>
+	<img style='height:50%;position:absolute; right:0; top:0;' src='../Cards/A004.jpg'>
     <div class="startMenuContainer">
-		<button class='adminLogin' href='Login.html'>Admin Login</button>
         <p id='homepageLogo'>STAR TREK</p>
-        <p class='appName'>Collector's Card Viewer</p>
+        <p class='appName'>Collector's</p>
+        <p class='appName'>Cards</p>
+		<a class='adminLogin' href="Login.html"><button>Admin Login</button></a>
 
         <div class="mainBtnContainer">
-            <button class="startMenuBtn">View Library</button>
-            <button class="startMenuBtn">Create a Card</button>
+		<button id='lib' class='startMenuBtn'>View Library</button>
+		<br/>
+		<a class='startMenuBtn' href="create.html"><button>Create Card</button></a>
         </div>
-
     </div>
 </body>
 </html>

@@ -12,5 +12,5 @@ if ($connection->query($sql) === TRUE) {
     echo "Record updated successfully";
 } else {
     echo "Error updating record: " . $conn->error;
-}t to database ... \n" . mysql_error ());
+}
 ?>
