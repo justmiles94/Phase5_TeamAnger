@@ -2,10 +2,24 @@
 
 include('connectLibraryDB.php');
 
+$cardnum = $_POST['cardnum'];
 $actor = $_POST['actor'];
 $character = $_POST['character'];
 $quote = $_POST['quote'];
 $position = $_POST['position'];
+
+if(!empty($cardnum)){//no card number is a new card
+  //update statement
+    
+}else{//else is a card edit
+  //insert statement
+  $sql = "insert into Users values (".$actor.", ".$character.", ".$quote.", ".$position.")";
+  if ($connection->query($sql) === TRUE) {
+        echo "Record updated successfully";
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
+}
 
 $sql = "select * from Library where ''=''";
 
