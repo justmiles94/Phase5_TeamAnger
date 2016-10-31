@@ -12,29 +12,29 @@ $("#loginForm").submit(function(){
         }
     });
 });
-$("#search").submit(function(){
-	$.ajax({
-         type: 'POST',
-         url: "search.php",
-         data: $('#search').serialize(), 
-         success: function(response) {
- 			$('.cardBox').insert(response);
-         },
-        error: function() {
-            alert("There was an error searching");
+$('#lib, #search').click(function () {
+    $.ajax({
+        type: 'POST',
+        url: "library.php",
+        success: function (response) {
+            window.location.href = 'Library.html';
+            $('.cardBox').insert(response);
+        },
+        error: function () {
+            alert("Error Loading Archive");
         }
     });
 });
-$('#lib').click(function(){
-	$.ajax({
-         type: 'POST',
-         url: "library.php",
-         success: function(response) {
-			window.location.href = 'Library.html';
-			$('.cardBox').insert(response);
-         },
-        error: function() {
-            alert("Error Loading Archive");
+$('#edit, #new').click(function () {
+    $.ajax({
+        type: 'POST',
+        url: "edit.php",
+        success: function (response) {
+            window.location.href = 'Library.html';
+            $('.cardBox').insert(response);
+        },
+        error: function () {
+            alert("Error In Edit/Creation");
         }
     });
 });
