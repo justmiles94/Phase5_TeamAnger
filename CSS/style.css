@@ -19,6 +19,40 @@ body {
 	background-size: cover;
 }
 
+
+li {
+	display: inline;
+	float: right;
+}
+
+li a {
+	background-color: navy;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 21px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: blue;
+}
+#sortBy:hover, #blank:hover {
+	background-color: navy;
+}
+
+#sortBy {
+	font-weight: bold;
+}
+
+#blank {
+	height: 19px;
+}
+
+#sortButtons{
+	background-color: navy;
+	margin: 15px;
+}
 #loginForm {
 	margin: 0;
 	padding: 0;
@@ -61,11 +95,7 @@ body {
     font-family: starTrek;
 }
 
-.adminLogin {
-	text-align: center;
-	font-size: 14px;
-	background-color: red;
-}
+
 
 img {
 }
@@ -76,13 +106,13 @@ img {
 }
 
 .mainBtnContainer button{
-	border-radius: 35px;
+	border-radius: 20px;
 	font-size: 48px;
 	font-weight: bold;
 	max-width: 250px;
 	max-height: 200px;
     text-align: center;
-	margin: 50px;
+	margin: 20px;
 }
 
 .topMenuBanner {
@@ -90,7 +120,11 @@ img {
 	margin: 15px;
 }
 
-
+.placeholder {
+	text-align: center;
+	color: grey;
+	font-size: 15px;
+}
 
 .returnToMain button{
 	border-radius: 5px;
@@ -99,4 +133,14 @@ img {
 	text-align: center;
 	float: right;
 	
+}
+
+.adminLogin button{
+	margin: 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 10px;
+	float: center;	
+	color: white;
+	background-color: #333333;
 }
