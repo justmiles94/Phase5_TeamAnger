@@ -10,7 +10,45 @@ $position = $_POST['position'];
 
 if(!empty($cardnum)){//no card number is a new card
   //update statement
-    
+  $sql = "update Library set ;
+
+  if(!empty($actor)){
+      $sql = $sql." 'actor'=".$actor;
+    }
+
+  if(!empty($character)){
+      $sql = $sql.", 'character'=".$character;
+    }
+
+  if(!empty($position)){
+      $sql = $sql.", 'position'=".$position;
+    }
+
+  if(!empty($quote)){
+      $sql = $sql.", 'quote'=".$quote;
+    }
+  $sql = $sql." where ''='' "
+  if(!empty($actor)){
+      $sql = $sql."and 'actor' like ".$actor;
+    }
+
+  if(!empty($character)){
+      $sql = $sql."and 'character'=".$character;
+    }
+
+  if(!empty($position)){
+      $sql = $sql."and 'position' like ".$position;
+    }
+
+  if(!empty($quote)){
+      $sql = $sql."and 'quote' like ".$quote;
+    }
+
+  if ($connection->query($sql) === TRUE) {
+        echo "Record updated successfully";
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
 }else{//else is a card edit
   //insert statement
   $sql = "insert into Users values (".$actor.", ".$character.", ".$quote.", ".$position.")";
@@ -19,31 +57,6 @@ if(!empty($cardnum)){//no card number is a new card
     } else {
         echo "Error updating record: " . $conn->error;
     }
-}
-
-$sql = "select * from Library where ''=''";
-
-if(!empty($actor)){
-    $sql = $sql." and 'actor' like ".$actor;
-  }
-
-if(!empty($character)){
-    $sql = $sql." and 'character' like ".$character;
-  }
-
-if(!empty($position)){
-    $sql = $sql." and 'position' like ".$position;
-  }
-
-if(!empty($quote)){
-    $sql = $sql." and 'quote' like ".$quote;
-  }
-
-if ($connection->query($sql) === TRUE) {
-      echo "Record updated successfully";
-  } else {
-      echo "Error updating record: " . $conn->error;
-  }
-  
+}  
 }
 ?>
