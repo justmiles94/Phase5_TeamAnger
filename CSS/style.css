@@ -15,8 +15,9 @@
 }
 
 body { 
+    max-height: 700px;
     background-image: star-trek-login-background.jpg;
-	background-size: cover;
+	background-size: contain;
 }
 
 #loginForm {
@@ -83,4 +84,9 @@ img {
 	max-height: 200px;
     text-align: center;
 	margin: 50px;
+}
+
+#left, #right{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
 }

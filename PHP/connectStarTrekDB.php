@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 CONNECT-DB.PHP
 Allows PHP to connect to your database
@@ -8,7 +8,7 @@ Allows PHP to connect to your database
 $server = 'localhost';
 $user = 'root';
 $pass = 'password';
-$db = 'Users';
+$db = 'startrek';
 
 // Connect to Database
 $connection = mysql_connect($server, $user, $pass)
