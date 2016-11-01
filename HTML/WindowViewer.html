@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+    <meta charset="UTF-8">
+    <title>Viewer</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+    <script src="../JS/javascript.js">
+		$('img').hover(function(){
+		    $(this) = "";
+		}
+    </script>
+</head>
+<body background='../CSS/plain background.jpg'>
+    <p id='homepageLogo'>STARFLEET ARCHIVES</p>
+    <p class='appName'>Click Card For Info</p>
+    <center class="cardBox" width="100%" style="">
+        <img id="left" class="card leftCard" src='../Cards/A260.jpg' style="float:left;width:15%;height:25%;margin-top:100px">
+        <img id="center" class="card centerCard" src='../Cards/A251.jpg' style="width:20%;height:30%;">
+        <img id="right" class="card rightCard" src='../Cards/A263.jpg' style="float:right;width:15%;height:25%;margin-top:100px">
+        <br />
+        <br />
+        <br />
+        <button class="centerCard" style="bottom:30px; font-size: 42px; border-radius:25px">Flip</button>
+        <button class="leftCard" style="bottom:30px; font-size: 42px; border-radius:25px; float:left">Previous</button>
+        <button class="rightCard" style="bottom:30px; font-size: 42px; border-radius:25px; float:right">Next</button>
+    </center>
+</body>
+</html>

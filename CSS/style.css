@@ -15,8 +15,9 @@
 }
 
 body { 
+    max-height: 700px;
     background-image: star-trek-login-background.jpg;
-	background-size: cover;
+	background-size: contain;
 }
 
 
@@ -113,6 +114,7 @@ img {
 	max-width: 250px;
 	max-height: 200px;
     text-align: center;
+<<<<<<< HEAD
 	margin: 20px;
 }
 
@@ -144,4 +146,12 @@ img {
 	float: center;	
 	color: white;
 	background-color: #333333;
+=======
+	margin: 50px;
+}
+
+#left, #right{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+>>>>>>> justmiles94/master
 }
