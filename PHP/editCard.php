@@ -1,6 +1,6 @@
 <?php
 
-include('connectLibraryDB.php');
+include('connectStarTrekDB.php');
 
 $cardnum = $_POST['cardnum'];
 $actor = $_POST['actor'];
@@ -10,7 +10,7 @@ $position = $_POST['position'];
 
 if(!empty($cardnum)){//no card number is a new card
   //update statement
-  $sql = "update Library set ;
+  $sql = "update library set ;
 
   if(!empty($actor)){
       $sql = $sql." 'actor'=".$actor;
@@ -51,7 +51,7 @@ if(!empty($cardnum)){//no card number is a new card
     }
 }else{//else is a card edit
   //insert statement
-  $sql = "insert into Users values (".$actor.", ".$character.", ".$quote.", ".$position.")";
+  $sql = "insert into users values (".$actor.", ".$character.", ".$quote.", ".$position.")";
   if ($connection->query($sql) === TRUE) {
         echo "Record updated successfully";
     } else {
