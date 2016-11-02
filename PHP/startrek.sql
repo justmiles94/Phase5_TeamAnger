@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `library` (
 -- Dumping data for table `library`
 --
 
-INSERT INTO `library` (`CardNum`, `Actor`, `Role`, `Quote`, `Position`) VALUES
+INSERT INTO `library` (`CardNum`, `Actor`, `Role`, `Episode`, `Position`) VALUES
 (0, 'Leonard Nimoy', 'Spock', 'live long and prosper', ''),
 (1, 'William Shatner', '', '', 'captain'),
 (2, 'James Doohan', 'Montgomery Scott', '', 'Chief Engineer'),
@@ -69,6 +69,24 @@ INSERT INTO `library` (`CardNum`, `Actor`, `Role`, `Quote`, `Position`) VALUES
 (12, 'Ben Childress', 'Gene Dynarski', 'mudd''s women', ''),
 (13, 'Balok', 'Clint Howard', 'the corbomite maneuver', ''),
 (14, 'Kevin Riley', 'Bruce Hyde', 'the conscience of the king', 'Lieutenant');
+(15, 'William Campbell', 'Trelane', 'the squire of gothos', '');
+(16, 'Gary Lockwood', 'Gary Mitchell', 'where no man has gone before', '');
+(17, 'Ricardo Montalban', 'Khan Noonien Singh', 'space seed', '');
+(18, 'Stewart Moss', 'Joe Tormolen', 'naked time', '');
+(19, 'Madlyn Rhue', 'Marla McGivers', 'space seed', '');
+(20, 'Malachi Throne', 'Commodore Mendez', 'the menagerie', '');
+(21, 'Morgan Woodward', 'Dr. Simon Van Gelder', 'dagger of the mind', '');
+(22, 'Meg Wyllie', 'The Keeper', 'the cage', '');
+(23, 'Joan Collins', 'Edith Keeler', 'the city on the edge of forever', '');
+(24, 'Michael J. Pollard', 'Jahn', 'miri', '');
+(25, 'Majel Barrett', 'Number One', 'the cage', '');
+(26, 'Sherry Jackson', 'Andrea', 'what are little girls made of?', '');
+(27, 'DeForest Kelley', 'Leonard H. McCoy', '', 'Doctor');
+(28, 'Walter Koenig', 'Pavel A. Chekov', '', 'Ensign');
+(29, 'Dorothy Fontana', '', '', 'Writer');
+(30, 'Majel Barrett', 'Christine Chapel', '', 'Nurse');
+(31, 'William Shatner', 'James T. Kirk', '', 'Captain');
+(32, 'James Doohan', 'Montgomery Scott', '', 'Chief Engineer');
 
 -- --------------------------------------------------------
 
