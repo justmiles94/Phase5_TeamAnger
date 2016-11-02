@@ -1,0 +1,157 @@
+@font-face {
+    font-family: starTrek;
+	color: yellow;
+    src: url(FEC.TTF);
+}
+
+.startMenuContainer {
+    position: relative;
+    text-align: center;
+}
+
+.startMenuBtn {
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+    max-height: 700px;
+    background-image: star-trek-login-background.jpg;
+	background-size: contain;
+}
+
+
+li {
+	display: inline;
+	float: right;
+}
+
+li a {
+	background-color: navy;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 21px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: blue;
+}
+#sortBy:hover, #blank:hover {
+	background-color: navy;
+}
+
+#sortBy {
+	font-weight: bold;
+}
+
+#blank {
+	height: 19px;
+}
+
+#sortButtons{
+	background-color: navy;
+	margin: 15px;
+	
+}
+#loginForm {
+	margin: 0;
+	padding: 0;
+	font-size: 64px;
+	text-align: center;
+	color: yellow;
+	font-family: starTrek;
+}
+
+#loginForm input:not([type='button']) {
+	height: 48px;
+	min-width: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+#loginForm input[type='submit'] {
+	font-size: 32px;
+	background-color: lightgreen;
+	border-radius: 25px;
+}
+
+.appName {
+	margin: 0;
+	padding: 0;
+    text-align: center;
+    color: yellow;
+	font-size: 48px;
+    font-family: courier;
+}
+
+#homepageLogo {
+	margin: 0;
+	padding: 0;
+    text-align: center;
+    text-decoration: underline;
+	font-size: 124px;
+	font-weight: bold;
+    color: yellow;
+    font-family: starTrek;
+}
+
+
+
+img {
+}
+
+.cardBox img {
+	margin: 15px;
+	height: 200px;
+}
+
+.mainBtnContainer button{
+	border-radius: 20px;
+	font-size: 48px;
+	font-weight: bold;
+	max-width: 250px;
+	max-height: 200px;
+    text-align: center;
+<<<<<<< HEAD
+	margin: 20px;
+}
+
+.topMenuBanner {
+	background-color: #DC143C;
+	margin: 15px;
+}
+
+.placeholder {
+	text-align: center;
+	color: grey;
+	font-size: 15px;
+}
+
+.returnToMain button{
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	float: right;
+	
+}
+
+.adminLogin button{
+	margin: 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 10px;
+	float: center;	
+	color: white;
+	background-color: #333333;
+=======
+	margin: 50px;
+}
+
+#left, #right{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+>>>>>>> justmiles94/master
+}
