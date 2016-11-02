@@ -19,10 +19,8 @@ $('#lib, #search').click(function () {
     $.ajax({
         type: 'POST',
         url: "library.php",
-<<<<<<< HEAD
-=======
-        data: $('#search').serialize(),
->>>>>>> justmiles94/master
+
+
         success: function (response) {
             window.location.href = 'Library.html';
             $('.cardBox').insert(response);
@@ -36,10 +34,8 @@ $('#edit, #new').click(function () {
     $.ajax({
         type: 'POST',
         url: "edit.php",
-<<<<<<< HEAD
-=======
-        data: $(this).serialize(),
->>>>>>> justmiles94/master
+
+
         success: function (response) {
             window.location.href = 'Library.html';
             $('.cardBox').insert(response);
