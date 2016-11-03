@@ -16,14 +16,14 @@ $("#loginForm").submit(function () {
     });
 });
 $('#lib, #search').click(function () {
+	alert("go to library");
     $.ajax({
         type: 'POST',
         url: "library.php",
-
-
+        data: $(this).serialize(), 
         success: function (response) {
-            window.location.href = 'Library.html';
             $('.cardBox').insert(response);
+            window.location.href = 'Library.html';
         },
         error: function () {
             alert("Error Loading Archive");
@@ -65,12 +65,9 @@ function blink() {
     context.fillRect(randX, randY, 20, 20);
 }
 
-$('#front').click(function(){
-	alert("hi");
-	this.src = flip(this.src);
+$('.cardBox img').click(function(){
+	alert("HI");
 });
-
-document.getElementById("front").addEventListener("click", flip(document.getElementById("front").src));
 
 //WindowViewer functions
 $('.leftCard').click(function () {
