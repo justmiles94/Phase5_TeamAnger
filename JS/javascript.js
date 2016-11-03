@@ -19,7 +19,8 @@ $('#lib, #search').click(function () {
     $.ajax({
         type: 'POST',
         url: "library.php",
-        data: $('#search').serialize(),
+
+
         success: function (response) {
             window.location.href = 'Library.html';
             $('.cardBox').insert(response);
@@ -33,7 +34,8 @@ $('#edit, #new').click(function () {
     $.ajax({
         type: 'POST',
         url: "edit.php",
-        data: $(this).serialize(),
+
+
         success: function (response) {
             window.location.href = 'Library.html';
             $('.cardBox').insert(response);
