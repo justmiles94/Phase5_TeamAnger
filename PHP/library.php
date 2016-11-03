@@ -9,11 +9,9 @@ $quote = $_POST['quote'];
 $position = $_POST['position'];
 
 if($all == "true"){
-<<<<<<< HEAD
-  $sql = "select * from Library order by name asc";
-=======
+
+
   $sql = "select * from library order by name asc";
->>>>>>> justmiles94/master
 
   if ($connection->query($sql) === TRUE) {
       echo "Record updated successfully";
@@ -22,11 +20,7 @@ if($all == "true"){
   }
 }else{
 
-<<<<<<< HEAD
-$sql = "select * from Library where ''=''";
-=======
 $sql = "select * from library where ''=''";
->>>>>>> justmiles94/master
 
 if(!empty($actor)){
     $sql = $sql." and 'actor' like ".$actor;
