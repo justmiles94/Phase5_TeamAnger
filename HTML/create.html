@@ -10,6 +10,10 @@
 
 </head>
 <body background='blueprint.png'>
+<div class="tooltip">Hover over me
+	<span class="tooltiptext">Tooltip text</span>
+	<a class="returnToMain" href="StartMenu.html"><button>Main Menu</button></a>
+</div>
     <div class="startMenuContainer">
         <p id='homepageLogo'>STAR TREK</p>
 		<p class='appName'>Step 1</p>
@@ -24,17 +28,26 @@
 				<form action="" id="makeCardForm1" >
 					<b>Enter Your Name: </b><input id="customerName" style='margin-top: 10%'><br>
 					<b>Enter Your Character Name: </b><input id="enteredCharacterName"  style='margin-top: 5%'><br>
-					<p><input type="button" id="submit1" value="Next"></p>
+					<!--<p><input type="button" id="submit1" value="Next"></p>-->
 				</form>
 
-				<form action="" id="makeCardForm2" style="display: none">
+				<form action="" id="makeCardForm2" style='margin-top: 3%'>
 					<b>Choose a background :</b><br>
 						<p>Control Room<input id="background1" type="radio" value="Control Room"></p><br>
 						<p>Space<input id="background2" type="radio" value="Space"></p><br>
 						<p>Transporter<input id="background3" type="radio" value="Transporter"></p><br>
 						<p>Starship Hallway<input id="background4" type="radio" value="Starship Hallway"></p><br>
-					<p><input type="button" id="submit2" value="Next"></p>
+						<!--<p><input type="button" id="submit2" value="Next"></p>-->
 				</form>
+
+				<form action="" id="makeCardForm3">
+					<p><input type="button" id="submit3" value="Add Your Image"></p>
+				</form>
+
+				<form action="" id="makeCardForm4">
+					<a href="../HTML/FinishCreate.html"><p><input type="button" id="submit4" value="Finish"></p></a>
+				</form>
+
 
 			</div>
 			<div id="blankCard" background-image="../Cards/Blanks/BlankFront.jpg">
