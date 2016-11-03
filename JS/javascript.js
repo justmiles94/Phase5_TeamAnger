@@ -52,7 +52,7 @@ $(document).ready(function () {
         blink();
         setInterval(blink, 3000);
     }
-})
+});
 function blink() {
     var ctx = document.getElementById("canv");
     var context = ctx.getContext("2d");
@@ -80,10 +80,38 @@ $('.centerCard').click(function () {
     window.location.href = 'WindowViewer.html?card=' + flip(cardNum);
 });
 function flip(card) {
-    alert("hi");
+
+
+
+
+//functions for Make a Card
+//     var s1 = doucment.getElementById("submit1");
+//     s1.addEventListener('click', function (e){
+//         var custName = document.getElementById("customerName");
+//         var charName = document.getElementById("characterName");
+//         $('#makeCardForm1').hide();
+//         $('#makeCardForm2').show();
+//     });
+//
+//     var s2 = document.getElementById("submit2");
+//     s2.addEventListener('click', function (e){
+//         if ($('#background1').attr("checked")){
+//             $('#blankCard').css({'background-image': 'url("../Cards/Blanks/ControlRoom_wBanner.jpg")'});
+//         }
+//         else if ($('#background2').attr("checked")){
+//             $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Space_wBanner.jpg")'});
+//         }
+//         else if ($('#background3').attr("checked")){
+//             $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Transporter_wBanner.jpg")'});
+//         }
+//         else if ($('#background1').attr("checked")){
+//             $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Hallway_wBanner.jpg")'});
+//         }
+//     });
 	if(card.includes('R')){
 		card.prototype.replace('_R', '');
 	}else{
 		card.prototype.replace('.jpg', '_R.jpg');
 	}
 }
+

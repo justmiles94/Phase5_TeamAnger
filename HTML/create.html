@@ -7,9 +7,55 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.js"
 	  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
 	  crossorigin="anonymous"></script>
-	<script src="../JS/javascript.js"></script>
+
 </head>
 <body background='blueprint.png'>
+<<<<<<< HEAD
+<div class="tooltip">Hover over me
+	<span class="tooltiptext">Tooltip text</span>
+	<a class="returnToMain" href="StartMenu.html"><button>Main Menu</button></a>
+</div>
+    <div class="startMenuContainer">
+        <p id='homepageLogo'>STAR TREK</p>
+		<p class='appName'>Step 1</p>
+		<progress value='10' max='100'></progress>
+    </div>
+	<br/>
+	<center>
+		<div id="makeCardContainer" style='width:80%;height:20%'>
+			<div id="makeCardOptions" style='width: 497px; height: 700px'>
+
+				<!-- AN ACTION NEEDS TO BE ADDED TO THE FORM TO CONECT TO A PHP FILE-->
+				<form action="" id="makeCardForm1" >
+					<b>Enter Your Name: </b><input id="customerName" style='margin-top: 10%'><br>
+					<b>Enter Your Character Name: </b><input id="enteredCharacterName"  style='margin-top: 5%'><br>
+					<!--<p><input type="button" id="submit1" value="Next"></p>-->
+				</form>
+
+				<form action="" id="makeCardForm2" style='margin-top: 3%'>
+					<b>Choose a background :</b><br>
+						<p>Control Room<input id="background1" type="radio" value="Control Room"></p><br>
+						<p>Space<input id="background2" type="radio" value="Space"></p><br>
+						<p>Transporter<input id="background3" type="radio" value="Transporter"></p><br>
+						<p>Starship Hallway<input id="background4" type="radio" value="Starship Hallway"></p><br>
+						<!--<p><input type="button" id="submit2" value="Next"></p>-->
+				</form>
+
+				<form action="" id="makeCardForm3">
+					<p><input type="button" id="submit3" value="Add Your Image"></p>
+				</form>
+
+				<form action="" id="makeCardForm4">
+					<a href="../HTML/FinishCreate.html"><p><input type="button" id="submit4" value="Finish"></p></a>
+				</form>
+
+
+			</div>
+			<div id="blankCard" background-image="../Cards/Blanks/BlankFront.jpg">
+				<p id="newText"></p>
+			</div>
+
+<!--=======
 	<a class="returnToMain" href="StartMenu.html"><button>Main Menu</button></a>
 	<br>
 	</br>
@@ -25,6 +71,7 @@
 		<div style='width:60%'>
 			<img id='front' style='margin:5px;height:500px;float:left' src='../Cards/Blanks/DWhiteF.jpg'>
 			<img id='back' style='margin:5px;height:500px;float:left' src='../Cards/Blanks/DWhiteB.jpg'>
+>>>>>>> refs/remotes/origin/master-->
 		</div>
 		<button style='margin: 10px;border-radius: 5px;text-align: center;font-size: 20px;'>Insert Picture</button>
 		<br/>
@@ -42,5 +89,30 @@
 		<br/>
 		<input type='submit' style='font-size:32px;' placeholder='Submit'>
 	</center>
+	<script language="JavaScript">
+		var s1 = doucment.getElementById("submit1");
+		s1.addEventListener('click', function (e){
+	var custName = document.getElementById("customerName");
+	var charName = document.getElementById("characterName");
+	$('#makeCardForm1').hide();
+	$('#makeCardForm2').show();
+	});
+
+	var s2 = document.getElementById("submit2");
+	s2.addEventListener('click', function (e){
+	if ($('#background1').attr("checked")){
+	$('#blankCard').css({'background-image': 'url("../Cards/Blanks/ControlRoom_wBanner.jpg")'});
+	}
+	else if ($('#background2').attr("checked")){
+	$('#blankCard').css({'background-image': 'url("../Cards/Blanks/Space_wBanner.jpg")'});
+	}
+	else if ($('#background3').attr("checked")){
+	$('#blankCard').css({'background-image': 'url("../Cards/Blanks/Transporter_wBanner.jpg")'});
+	}
+	else if ($('#background1').attr("checked")){
+	$('#blankCard').css({'background-image': 'url("../Cards/Blanks/Hallway_wBanner.jpg")'});
+	}
+	});
+	</script>
 </body>
 </html>
