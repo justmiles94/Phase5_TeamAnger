@@ -7,19 +7,42 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.js"
 	  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
 	  crossorigin="anonymous"></script>
-	<script src="../JS/javascript.js"></script>
+
 </head>
 <body background='blueprint.png'>
     <div class="startMenuContainer">
         <p id='homepageLogo'>STAR TREK</p>
 		<p class='appName'>Step 1</p>
-		<progress value='10' max='100'>
+		<progress value='10' max='100'></progress>
     </div>
 	<br/>
 	<center>
-		<div style='width:60%'>
-			<img style='height:500px;float:left' src='../Cards/A003.jpg'>
+		<div id="makeCardContainer" style='width:80%;height:20%'>
+			<div id="makeCardOptions" style='width: 497px; height: 700px'>
+
+				<!-- AN ACTION NEEDS TO BE ADDED TO THE FORM TO CONECT TO A PHP FILE-->
+				<form action="" id="makeCardForm1">
+					<b>Enter Your Name: </b><input id="customerName"><br>
+					<b>Enter Your Character Name: </b><input id="enteredCharacterName" style='margin-top: 5%' value=""><br>
+					<p><input type="button" id="submit1" value="Next"></p>
+				</form>
+
+				<form action="" id="makeCardForm2">
+					<b>Choose a background :</b><br>
+						<p>Control Room<input type="radio" value="Control Room"></p><br>
+						<p>Space<input type="radio" value="Space"></p><br>
+						<p>Transporter<input type="radio" value="Transporter"></p><br>
+						<p>Starship Hallway<input type="radio" value="Starship Hallway"></p><br>
+					<p><input type="submit" value="Next"></p>
+				</form>
+
+			</div>
+			<div id="blankCard" background-image="../Cards/Blanks/BlankFront.jpg">
+				<p id="newText"></p>
+			</div>
+
 		</div>
 	</center>
+	<script src="../JS/javascript2.js"></script>
 </body>
 </html>

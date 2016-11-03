@@ -52,7 +52,7 @@ $(document).ready(function () {
         blink();
         setInterval(blink, 3000);
     }
-})
+});
 function blink() {
     var ctx = document.getElementById("canv");
     var context = ctx.getContext("2d");
@@ -70,7 +70,7 @@ $('.leftCard').click(function () {
     window.location.href = 'WindowViewer.html?card=' + cardNum--;
 });
 $('.rightCard').click(function () {
-    window.location.href = 'WindowViewer.html?card=' + cardNum++);
+    window.location.href = 'WindowViewer.html?card=' + cardNum++;
 });
 $('.centerCard').click(function () {
     window.location.href = 'WindowViewer.html?card=' + flip(cardNum);
@@ -78,3 +78,12 @@ $('.centerCard').click(function () {
 function flip(card) {
     alert("hi");
 }
+
+//functions for Make a Card
+    var s = doucment.getElementById("submit1");
+    s.addEventListener('click', function (e){
+        var cust = document.getElementById("customerName");
+        if (cust == ""){
+            cust.value = "hello";
+        }
+    });

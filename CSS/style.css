@@ -153,3 +153,22 @@ img {
     filter: alpha(opacity=50); /* For IE8 and earlier */
 
 }
+
+#makeCardContainer {
+	background-color: lightgoldenrodyellow;
+	text-align: center;
+	margin: 10px;
+
+}
+
+#makeCardOptions {
+	background-color: lightgoldenrodyellow;
+ 	float: left;
+}
+
+#blankCard {
+	width: 497px;
+	height: 700px;
+	float: right;
+	background-image: url('../Cards/Blanks/BlankFront.jpg');
+}
