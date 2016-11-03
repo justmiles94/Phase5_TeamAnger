@@ -10,7 +10,7 @@ $position = $_POST['position'];
 
 if($all == "true"){
 
-
+>>>>>>> justmiles94/master
   $sql = "select * from library order by name asc";
 
   if ($connection->query($sql) === TRUE) {
