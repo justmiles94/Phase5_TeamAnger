@@ -139,14 +139,12 @@ img {
 }
 
 .adminLogin button{
-	margin: 10px;
 	border-radius: 5px;
 	text-align: center;
 	font-size: 10px;
 	float: center;	
 	color: white;
 	background-color: #333333;
-	margin: 50px;
 }
 
 #left, #right{

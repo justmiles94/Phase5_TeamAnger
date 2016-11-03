@@ -65,16 +65,28 @@ function blink() {
     context.fillRect(randX, randY, 20, 20);
 }
 
+$('#front').click(function(){
+	alert("hi");
+	this.src = flip(this.src);
+});
+
+document.getElementById("front").addEventListener("click", flip(document.getElementById("front").src));
+
 //WindowViewer functions
 $('.leftCard').click(function () {
     window.location.href = 'WindowViewer.html?card=' + cardNum--;
 });
 $('.rightCard').click(function () {
-    window.location.href = 'WindowViewer.html?card=' + cardNum++);
+    window.location.href = 'WindowViewer.html?card=' + cardNum++;
 });
 $('.centerCard').click(function () {
     window.location.href = 'WindowViewer.html?card=' + flip(cardNum);
 });
 function flip(card) {
     alert("hi");
+	if(card.includes('R')){
+		card.prototype.replace('_R', '');
+	}else{
+		card.prototype.replace('.jpg', '_R.jpg');
+	}
 }
