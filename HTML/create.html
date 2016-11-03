@@ -21,19 +21,19 @@
 			<div id="makeCardOptions" style='width: 497px; height: 700px'>
 
 				<!-- AN ACTION NEEDS TO BE ADDED TO THE FORM TO CONECT TO A PHP FILE-->
-				<form action="" id="makeCardForm1">
-					<b>Enter Your Name: </b><input id="customerName"><br>
-					<b>Enter Your Character Name: </b><input id="enteredCharacterName" style='margin-top: 5%' value=""><br>
+				<form action="" id="makeCardForm1" >
+					<b>Enter Your Name: </b><input id="customerName" style='margin-top: 10%'><br>
+					<b>Enter Your Character Name: </b><input id="enteredCharacterName"  style='margin-top: 5%'><br>
 					<p><input type="button" id="submit1" value="Next"></p>
 				</form>
 
-				<form action="" id="makeCardForm2">
+				<form action="" id="makeCardForm2" style="display: none">
 					<b>Choose a background :</b><br>
-						<p>Control Room<input type="radio" value="Control Room"></p><br>
-						<p>Space<input type="radio" value="Space"></p><br>
-						<p>Transporter<input type="radio" value="Transporter"></p><br>
-						<p>Starship Hallway<input type="radio" value="Starship Hallway"></p><br>
-					<p><input type="submit" value="Next"></p>
+						<p>Control Room<input id="background1" type="radio" value="Control Room"></p><br>
+						<p>Space<input id="background2" type="radio" value="Space"></p><br>
+						<p>Transporter<input id="background3" type="radio" value="Transporter"></p><br>
+						<p>Starship Hallway<input id="background4" type="radio" value="Starship Hallway"></p><br>
+					<p><input type="button" id="submit2" value="Next"></p>
 				</form>
 
 			</div>
@@ -43,6 +43,6 @@
 
 		</div>
 	</center>
-	<script src="../JS/javascript2.js"></script>
+	<script src="../JS/javascript.js"></script>
 </body>
 </html>

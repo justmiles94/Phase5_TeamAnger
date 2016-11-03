@@ -80,10 +80,26 @@ function flip(card) {
 }
 
 //functions for Make a Card
-    var s = doucment.getElementById("submit1");
-    s.addEventListener('click', function (e){
-        var cust = document.getElementById("customerName");
-        if (cust == ""){
-            cust.value = "hello";
+    var s1 = doucment.getElementById("submit1");
+    s1.addEventListener('click', function (e){
+        var custName = document.getElementById("customerName");
+        var charName = document.getElementById("characterName");
+        $('#makeCardForm1').hide();
+        $('#makeCardForm2').show();
+    });
+
+    var s2 = document.getElementById("submit2");
+    s2.addEventListener('click', function (e){
+        if ($('#background1').attr("checked")){
+            $('#blankCard').css({'background-image': 'url("../Cards/Blanks/ControlRoom_wBanner.jpg")'});
+        }
+        else if ($('#background2').attr("checked")){
+            $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Space_wBanner.jpg")'});
+        }
+        else if ($('#background3').attr("checked")){
+            $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Transporter_wBanner.jpg")'});
+        }
+        else if ($('#background1').attr("checked")){
+            $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Hallway_wBanner.jpg")'});
         }
     });
