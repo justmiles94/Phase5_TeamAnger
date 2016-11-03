@@ -16,14 +16,14 @@ $("#loginForm").submit(function () {
     });
 });
 $('#lib, #search').click(function () {
+	alert("go to library");
     $.ajax({
         type: 'POST',
         url: "library.php",
-
-
+        data: $(this).serialize(), 
         success: function (response) {
-            window.location.href = 'Library.html';
             $('.cardBox').insert(response);
+            window.location.href = 'Library.html';
         },
         error: function () {
             alert("Error Loading Archive");
@@ -65,16 +65,25 @@ function blink() {
     context.fillRect(randX, randY, 20, 20);
 }
 
+$('.cardBox img').click(function(){
+	alert("HI");
+});
+
 //WindowViewer functions
 $('.leftCard').click(function () {
     window.location.href = 'WindowViewer.html?card=' + cardNum--;
 });
 $('.rightCard').click(function () {
-    window.location.href = 'WindowViewer.html?card=' + cardNum++);
+    window.location.href = 'WindowViewer.html?card=' + cardNum++;
 });
 $('.centerCard').click(function () {
     window.location.href = 'WindowViewer.html?card=' + flip(cardNum);
 });
 function flip(card) {
     alert("hi");
+	if(card.includes('R')){
+		card.prototype.replace('_R', '');
+	}else{
+		card.prototype.replace('.jpg', '_R.jpg');
+	}
 }
