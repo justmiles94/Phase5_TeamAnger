@@ -10,24 +10,22 @@
 	<script src="../JS/javascript.js"></script>
 </head>
 <body style='background-color:black'>
-
-	<img style='height:50%;position:absolute; bottom:0' src='../Cards/A001.jpg'>
-	<img style='height:50%;position:absolute;right:0; bottom:0' src='../Cards/A002.jpg'>
-	<img style='height:50%;position:absolute; top:0;' src='../Cards/A003.jpg'>
-	<img style='height:50%;position:absolute; right:0; top:0;' src='../Cards/A004.jpg'>
-    <div class="startMenuContainer">
-        <p id='homepageLogo'>STAR TREK</p>
-        <p class='appName'>Collector's</p>
-        <p class='appName'>Cards</p>
-		
-
-        <div class="mainBtnContainer">
-		<a class = 'startMenuBtn' href="Library.html"><button>View Library</button>
-		<br/>
-		<a class='startMenuBtn' href="create.html"><button>Create Card</button></a>
+    <canvas id="canv" style="position:absolute; height:100%;width:100%;left:0; top:0;"></canvas>
+        <img style='height:50%;position:absolute; bottom:0; left:0' src='../Cards/A001.jpg'>
+        <img style='height:50%;position:absolute;right:0; bottom:0' src='../Cards/A002.jpg'>
+        <img style='height:50%;position:absolute; top:0; left:0' src='../Cards/A003.jpg'>
+        <img style='height:50%;position:absolute; right:0; top:0;' src='../Cards/A004.jpg'>
+        <div class="startMenuContainer">
+            <p id='homepageLogo'>STAR TREK</p>
+            <p class='appName'>Collector's</p>
+            <p class='appName'>Cards</p>
+            <a class='adminLogin' href="../HTML/Login.html"><button>Admin Login</button></a>
+            <div class="mainBtnContainer">
+                <a id='lib' class='startMenuBtn' href="../HTML/Library.html"><button>View Library</button></a>
+                <br />
+                <a class='startMenuBtn' href="../HTML/create.html"><button>Create Card</button></a>
+            </div>
         </div>
-		<a class='adminLogin' href="Login.html"><button>Admin Login</button></a>
     </div>
-
 </body>
 </html>

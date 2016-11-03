@@ -16,14 +16,14 @@ $("#loginForm").submit(function () {
     });
 });
 $('#lib, #search').click(function () {
+	alert("go to library");
     $.ajax({
         type: 'POST',
         url: "library.php",
-
-
+        data: $(this).serialize(), 
         success: function (response) {
-            window.location.href = 'Library.html';
             $('.cardBox').insert(response);
+            window.location.href = 'Library.html';
         },
         error: function () {
             alert("Error Loading Archive");
@@ -65,6 +65,10 @@ function blink() {
     context.fillRect(randX, randY, 20, 20);
 }
 
+$('.cardBox img').click(function(){
+	alert("HI");
+});
+
 //WindowViewer functions
 $('.leftCard').click(function () {
     window.location.href = 'WindowViewer.html?card=' + cardNum--;
@@ -76,30 +80,38 @@ $('.centerCard').click(function () {
     window.location.href = 'WindowViewer.html?card=' + flip(cardNum);
 });
 function flip(card) {
-    alert("hi");
-}
+
+
+
 
 //functions for Make a Card
-    var s1 = doucment.getElementById("submit1");
-    s1.addEventListener('click', function (e){
-        var custName = document.getElementById("customerName");
-        var charName = document.getElementById("characterName");
-        $('#makeCardForm1').hide();
-        $('#makeCardForm2').show();
-    });
+//     var s1 = doucment.getElementById("submit1");
+//     s1.addEventListener('click', function (e){
+//         var custName = document.getElementById("customerName");
+//         var charName = document.getElementById("characterName");
+//         $('#makeCardForm1').hide();
+//         $('#makeCardForm2').show();
+//     });
+//
+//     var s2 = document.getElementById("submit2");
+//     s2.addEventListener('click', function (e){
+//         if ($('#background1').attr("checked")){
+//             $('#blankCard').css({'background-image': 'url("../Cards/Blanks/ControlRoom_wBanner.jpg")'});
+//         }
+//         else if ($('#background2').attr("checked")){
+//             $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Space_wBanner.jpg")'});
+//         }
+//         else if ($('#background3').attr("checked")){
+//             $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Transporter_wBanner.jpg")'});
+//         }
+//         else if ($('#background1').attr("checked")){
+//             $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Hallway_wBanner.jpg")'});
+//         }
+//     });
+	if(card.includes('R')){
+		card.prototype.replace('_R', '');
+	}else{
+		card.prototype.replace('.jpg', '_R.jpg');
+	}
+}
 
-    var s2 = document.getElementById("submit2");
-    s2.addEventListener('click', function (e){
-        if ($('#background1').attr("checked")){
-            $('#blankCard').css({'background-image': 'url("../Cards/Blanks/ControlRoom_wBanner.jpg")'});
-        }
-        else if ($('#background2').attr("checked")){
-            $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Space_wBanner.jpg")'});
-        }
-        else if ($('#background3').attr("checked")){
-            $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Transporter_wBanner.jpg")'});
-        }
-        else if ($('#background1').attr("checked")){
-            $('#blankCard').css({'background-image': 'url("../Cards/Blanks/Hallway_wBanner.jpg")'});
-        }
-    });

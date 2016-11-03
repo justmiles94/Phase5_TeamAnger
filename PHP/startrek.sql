@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `library` (
 -- Dumping data for table `library`
 --
 
-INSERT INTO `library` (`CardNum`, `Actor`, `Role`, `Quote`, `Position`) VALUES
+INSERT INTO `library` (`CardNum`, `Actor`, `Role`, `Episode`, `Position`) VALUES
 (0, 'Leonard Nimoy', 'Spock', 'live long and prosper', ''),
 (1, 'William Shatner', '', '', 'captain'),
 (2, 'James Doohan', 'Montgomery Scott', '', 'Chief Engineer'),
@@ -69,6 +69,60 @@ INSERT INTO `library` (`CardNum`, `Actor`, `Role`, `Quote`, `Position`) VALUES
 (12, 'Ben Childress', 'Gene Dynarski', 'mudd''s women', ''),
 (13, 'Balok', 'Clint Howard', 'the corbomite maneuver', ''),
 (14, 'Kevin Riley', 'Bruce Hyde', 'the conscience of the king', 'Lieutenant');
+(15, 'William Campbell', 'Trelane', 'the squire of gothos', '');
+(16, 'Gary Lockwood', 'Gary Mitchell', 'where no man has gone before', '');
+(17, 'Ricardo Montalban', 'Khan Noonien Singh', 'space seed', '');
+(18, 'Stewart Moss', 'Joe Tormolen', 'naked time', '');
+(19, 'Madlyn Rhue', 'Marla McGivers', 'space seed', '');
+(20, 'Malachi Throne', 'Commodore Mendez', 'the menagerie', '');
+(21, 'Morgan Woodward', 'Dr. Simon Van Gelder', 'dagger of the mind', '');
+(22, 'Meg Wyllie', 'The Keeper', 'the cage', '');
+(23, 'Joan Collins', 'Edith Keeler', 'the city on the edge of forever', '');
+(24, 'Michael J. Pollard', 'Jahn', 'miri', '');
+(25, 'Majel Barrett', 'Number One', 'the cage', '');
+(26, 'Sherry Jackson', 'Andrea', 'what are little girls made of?', '');
+(27, 'DeForest Kelley', 'Leonard H. McCoy', '', 'Doctor');
+(28, 'Walter Koenig', 'Pavel A. Chekov', '', 'Ensign');
+(29, 'Dorothy Fontana', '', '', 'Writer');
+(30, 'Majel Barrett', 'Christine Chapel', '', 'Nurse');
+(31, 'William Shatner', 'James T. Kirk', '', 'Captain');
+(32, 'James Doohan', 'Montgomery Scott', '', 'Chief Engineer');
+(33, 'George Takei', 'Hikaru Sulu', '', 'Lieutenant');
+(34, 'Nichelle Nichols', 'Uhura', '', 'Lieutenant');
+(35, 'Antoinette Bower', 'Sylvia', 'Catspaw', '');
+(36, 'Tige Andrews', 'Kras', 'Friday\'s Child', '');
+(37, 'Michael Forest', 'Apollo', 'Who Mourns for Adonais?', '');
+(38, 'Tasha Martel', 'T\'pring', 'Amok Time', '');
+(39, 'William Windom', 'Matthew Decker', 'The Doomsday Machine', 'Commodore');
+(40, 'John Fiedler', 'Hengist', 'Wolf in the fold', '');
+(41, 'Charles Macaulay', 'Jaris', 'Wolf in the fold', '');
+(42, 'Keith Andes', 'Akuta', 'The Apple');
+(43, 'Barbara Luna', 'Marlena Moreau', 'Mirror, Mirror', '');
+(44, 'Charlie Brill', 'Arne Darvin', 'The Trouble with Tribbles', '');
+(45, 'William Campbell', 'Captain Koloth', 'The Trouble with Tribbles', 'Captain');
+(46, 'William Schallert', 'Nilz Barris', 'The Trouble with Tribbles', '');
+(47, 'William O\'Connell', 'Thelev', 'Jorney To Babel', '');
+(48, 'John Wheeler', 'Gav', 'Journey To Babel', '');
+(49, 'Nancy Kovack', 'Nona', 'A Private Little War', '');
+(50, 'Joseph Ruskin', 'Galt', 'The Gamesters of Triskelion', '');
+(51, 'Stephen Brooks', 'Ensign Garrovick', 'Obsession', 'Ensign');
+(52, 'Anthony Caruso', 'Bela Oxmyx', 'A Piece of the Action', '');
+(53, 'Lee Delano', 'Kalo', 'A Piece of the Action', '');
+(54, 'Barbara Bouchet', 'Kelinda', 'By any other name', '');
+(55, 'Warren Stevens', 'Rojan', 'By any other name', '');
+(56, 'William Marshall', 'Doctor Richard Daystrom', 'The Ultimate Computer', 'Doctor');
+(57, 'Roy Jenson', 'Cloud William', 'The Omega Glory', '');
+(58, 'Teri Garr', 'Roberta Lincoln', 'Assignment: Earth', '');
+(59, 'Leonard Nimoy', 'Mister Spock', '', '');
+(60, 'James Doohan', 'Montgomery Scott', '', 'Chief Engineer');
+(61, 'DeForest Kelley', 'Leonard H. McCoy', '', 'Doctor');
+(62, 'Walter Koenig', 'Pavel Chekov', '', 'Ensign');
+(63, 'John Winston', 'Lieutenant Kyle', '', 'Lieutenant');
+(64, 'Herb Solow', '', '', 'Executive in charge of production');
+(65, 'Walter M. Jefferies', '', '', 'Art Director');
+(66, 'Ron Soble', 'Wyatt Earp', 'Spectre of the Gun', '');
+(67, 'Tony Young', 'Kryton', 'Elaan of Troyius', '');
+
 
 -- --------------------------------------------------------
 
