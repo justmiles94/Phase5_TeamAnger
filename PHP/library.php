@@ -41,6 +41,18 @@ $sql = $sql." ordered by actor asc";
 
 if ($connection->query($sql) === TRUE) {
       echo "Record updated successfully";
+	  //create html strings with the returned card numbers
+	while ($row = mysql_fetch_array($connection)) {
+		if($row[0] < 10){
+			echo "<img src='../Cards/A00".$row[0].".jpg'>";
+		}
+		if($row[0] < 100){
+			echo "<img src='../Cards/A0".$row[0].".jpg'>";
+		}
+		if($row[0] > 10 && $row[0] > 99 && $row[0] < 1000){
+			echo "<img src='../Cards/A".$row[0].".jpg'>";
+		}
+	}
   } else {
       echo "Error updating record: " . $conn->error;
   }

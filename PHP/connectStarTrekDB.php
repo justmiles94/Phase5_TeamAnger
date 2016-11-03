@@ -6,8 +6,8 @@ Allows PHP to connect to your database
 
 // Database Variables (edit with your own server information)
 $server = 'localhost';
-$user = 'justin';
-$pass = 'Jwad0194';
+$user = 'root';
+$pass = '';
 $db = 'startrek';
 
 // Connect to Database

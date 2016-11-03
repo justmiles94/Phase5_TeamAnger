@@ -5,8 +5,8 @@ Allows PHP to connect to your database
 */
 
 $server = 'localhost';
-$user = 'justin';
-$pass = 'Jwad0194';
+$user = 'root';
+$pass = '';
 
 // Connect to Database
 $connection = new mysqli($server, $user, $pass);
