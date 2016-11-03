@@ -135,7 +135,20 @@ img {
 	text-align: center;
 	position:absolute;
 	right:10px;
-	
+}
+
+.returnToLibrary button{
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.window {
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .adminLogin button{
